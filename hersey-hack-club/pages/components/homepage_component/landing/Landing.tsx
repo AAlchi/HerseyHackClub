@@ -6,11 +6,11 @@ import gsap from 'gsap'
 const Landing = () => { 
 
     return (
-        <div className='background text-white'>
+        <div className='background text-white shadow-lg tracking-wide'>
             <div className='flex flex-col'>
                 <div className='text-center flex flex-col gap-10 items-center justify-center pt-10 px-4 md:px-8 lg:px-16' style={{ minHeight: "600px", flex: "2" }}>
                     <div className='flex flex-col gap-3'>
-                        <h1 className='text-5xl font-extrabold one font-extrabold'>
+                        <h1 className='text-6xl font-extrabold one font-extrabold'>
                             <span className="HSOrange">Code.</span> Win Prizes. <span className="HSOrange">Make a Difference.</span>
                         </h1>
                         <p className='text-lg font-bold two px-3'>
