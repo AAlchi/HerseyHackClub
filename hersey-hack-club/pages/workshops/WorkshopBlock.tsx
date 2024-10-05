@@ -11,7 +11,7 @@ const WorkshopBlock: React.FC<WorkshopBlockInterface> = ({
   link
 }) => { 
   const router = useRouter();
-
+  
   return (
     <div className='bg-white text-black rounded-lg p-4 w-full'>
       <div onClick={() => router.push(link)} className='flex items-center justify-between cursor-pointer'>

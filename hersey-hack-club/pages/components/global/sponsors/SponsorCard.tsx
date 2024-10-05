@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface SponsorCardInterface { 
@@ -22,7 +23,7 @@ const SponsorCard: React.FC<SponsorCardInterface> = ({
             <div className='p-4'>
                 <div className='flex items-center justify-between border-b-2 border-gray-200 pb-3'>
                     <div className='flex gap-3 items-start'>
-                        <img
+                        <Image
                             className="w-auto"
                             style={{maxHeight: "45px"}}
                             src={image}

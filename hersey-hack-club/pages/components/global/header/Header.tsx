@@ -27,7 +27,7 @@ const Header = () => {
     return (
         <header className={`fixed w-full z-10 text-white text-xl transition-colors duration-300 ease-in-out ${hasScrolled || menuOpen ? 'bg-header' : 'bg-transparent'}`}>
             <div className='p-5 flex justify-start items-center gap-3'>
-                <img src='/HackClub_Logo.png' alt="logo" style={{maxWidth: "35px"}}/>
+                <Image width={50} height={50} src='/HackClub_Logo.png' alt="logo" style={{maxWidth: "35px"}}/>
                 <h1 className='text-xl font-bold'>Hersey Hack Club</h1>  
             </div>  
         </header>

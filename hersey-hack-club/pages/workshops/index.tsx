@@ -1,12 +1,20 @@
 import React from 'react'
 import Header from '../components/global/header/Header'
-import WorkshopBlock from './WorkshopBlock'
-import WorkshopData from './workshopData'
+import WorkshopBlock from './WorkshopBlock' 
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 
 const WorkshopPage = () => {
   const router = useRouter();
+
+  const workshopData = [
+    {
+      id: 1,
+      name: "No Workshops Yet",
+      link: "/"
+    } 
+  ]
+  
   return (
     <>
       <Head>
@@ -28,7 +36,7 @@ const WorkshopPage = () => {
             <div className='w-full border-b-2 border-white' style={{ height: "2px" }} />
           </div>
           <div className='flex gap-3 w-full flex-col items-center justify-center pt-10'>
-            {WorkshopData.workshopData.map(data => (
+            {workshopData.map(data => (
               <div key={data.id} className='w-full'>
                 <WorkshopBlock name={data.name} link={data.link} />
               </div>
