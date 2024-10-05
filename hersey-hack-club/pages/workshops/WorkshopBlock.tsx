@@ -13,7 +13,7 @@ const WorkshopBlock: React.FC<WorkshopBlockInterface> = ({
   const router = useRouter();
 
   return (
-    <div className='bg-white text-black rounded-lg p-4 lg:w-11/12 w-full'>
+    <div className='bg-white text-black rounded-lg p-4 w-full'>
       <div onClick={() => router.push(link)} className='flex items-center justify-between cursor-pointer'>
         <h1 className='text-lg font-extrabold'>{name}</h1> 
       </div>  
