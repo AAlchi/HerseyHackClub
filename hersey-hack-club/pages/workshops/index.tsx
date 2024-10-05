@@ -22,7 +22,9 @@ const WorkshopPage = () => {
         </div> 
         <div className='flex gap-3 w-full flex-col items-center justify-center pt-10'>
           {WorkshopData.workshopData.map(data => (
-            <WorkshopBlock name={data.name} link={data.link}/>
+            <div key={data.id}>
+              <WorkshopBlock name={data.name} link={data.link}/>
+            </div>
           ))}
         </div>
     </div>
